@@ -610,19 +610,19 @@ We support students with:</p>
     <div class="row gy-4">
 
       <div class="col-md-6">
-        <input type="text" name="Name" class="form-control" placeholder="Full Name" required>
+        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
       </div>
 
       <div class="col-md-6">
-        <input type="email" name="Email" class="form-control" placeholder="Email Address" required>
+        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
       </div>
 
       <div class="col-md-6">
-        <input type="text" name="Phone" class="form-control" placeholder="Phone Number (WhatsApp preferred)" required>
+        <input type="text" name="phone" class="form-control" placeholder="Phone Number (WhatsApp preferred)" required>
       </div>
 
       <div class="col-md-6">
-        <select name="Qualification" class="form-control" required>
+        <select name="qualification" class="form-control" required>
           <option value="">Highest Qualification</option>
           <option>WAEC / NECO</option>
           <option>OND</option>
@@ -633,11 +633,11 @@ We support students with:</p>
       </div>
 
       <div class="col-md-6">
-        <input type="text" name="Course" class="form-control" placeholder="Course Interested In">
+        <input type="text" name="course" class="form-control" placeholder="Course Interested In">
       </div>
 
       <div class="col-md-6">
-        <select name="Preferred Intake" class="form-control">
+        <select name="intake" class="form-control">
           <option value="">Preferred Intake</option>
           <option>January</option>
           <option>May</option>
@@ -646,7 +646,7 @@ We support students with:</p>
       </div>
 
       <div class="col-md-12">
-        <textarea class="form-control" name="Message" rows="5" placeholder="Tell us more about your study plans"></textarea>
+        <textarea class="form-control" name="message" rows="5" placeholder="Tell us more about your study plans"></textarea>
       </div>
 
       <div class="col-md-12 text-center">
@@ -655,14 +655,14 @@ We support students with:</p>
 
     </div>
 
-    <!-- Disable captcha -->
+    <!-- FormSubmit settings -->
+
+    <input type="hidden" name="_subject" value="Hugo Consult Website Inquiry">
+    <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_captcha" value="false">
 
-    <!-- Format email -->
-    <input type="hidden" name="_template" value="table">
-
-    <!-- Auto response -->
-    <input type="hidden" name="_autoresponse" value="Thank you for contacting Hugo Consult. Our team will review your details and contact you shortly regarding studying in the UK.">
+    <!-- autoresponse to student -->
+    <input type="hidden" name="_autoresponse" value="Thank you for contacting Hugo Consult. We have received your inquiry about studying in the UK. One of our advisors will contact you shortly.">
 
   </form>
 </div>
